@@ -1,5 +1,6 @@
 package com.beschtee.tradingservice.Controllers;
 
+import com.beschtee.tradingservice.Services.BankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -12,6 +13,9 @@ public class TemplateController {
     @Autowired
     private RestTemplate restTemplate;
 
+    @Autowired
+    private BankService bankService;
+
     @GetMapping("/main")
     public String goToMainPage() {
         return "Main";
@@ -21,5 +25,4 @@ public class TemplateController {
     public String redirectToMain() {
         return "redirect:/main";
     }
-
 }

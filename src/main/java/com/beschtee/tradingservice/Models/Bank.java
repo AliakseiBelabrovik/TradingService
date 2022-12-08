@@ -2,6 +2,8 @@ package com.beschtee.tradingservice.Models;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,7 +11,9 @@ import lombok.NoArgsConstructor;
 @Table(
         name="bank"
 )
+@AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Data
 public class Bank {
     @Id

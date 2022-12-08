@@ -1,9 +1,15 @@
 package com.beschtee.tradingservice.Models.person;
 
-import com.beschtee.tradingservice.Models.Depot;
-import lombok.Data;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.*;
 
+@Entity
+@Table(name = "employee")
 @Data
+@AllArgsConstructor
+@Builder
+@EqualsAndHashCode(callSuper=true)
 public class Employee extends User {
-    public Depot depot;
+
 }
