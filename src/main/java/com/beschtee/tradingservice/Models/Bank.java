@@ -4,7 +4,7 @@ package com.beschtee.tradingservice.Models;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+//asdf
 @Entity
 @Table(
         name="bank"
