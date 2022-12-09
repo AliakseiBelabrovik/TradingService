@@ -29,7 +29,7 @@ import WeatherState from './context/weather/weatherState';
 import NoteState from './context/notes/NoteState';
 import WeatherForecastState from './context/weatherForecast/WeatherForecastState';
 import DepotState from './context/depot/DepotState';
-import BankVoumeState from './context/bankVolume/bankVoumeState';
+import BankVolumeState from './context/bankVolume/bankVolumeState';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -50,7 +50,7 @@ const App = () => {
             <WeatherState>
               <WeatherForecastState>
                 <DepotState>
-                  <BankVoumeState>
+                  <BankVolumeState>
                     <Router>
                       <AlertState>
                         <Fragment>
@@ -70,7 +70,7 @@ const App = () => {
                         </Fragment>
                       </AlertState>
                     </Router>
-                  </BankVoumeState>
+                  </BankVolumeState>
                 </DepotState>
               </WeatherForecastState>
             </WeatherState>

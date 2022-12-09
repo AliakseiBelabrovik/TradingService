@@ -1,6 +1,6 @@
   import React, { Fragment} from 'react';
 
-  import mainLogoBlack from "../../res/img/Trading_Black.jpg";
+  import mainLogoBlack from "../../res/img/logo_transparent.png";
   import mainLogoWhite from "../../res/img/Trading_White.jpg";
 
 

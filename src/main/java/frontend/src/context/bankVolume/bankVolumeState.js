@@ -1,18 +1,18 @@
 import React, { useContext, useEffect, Fragment, useReducer } from 'react'
 import axios from 'axios';
-import GasPriceContext from './bankVolumeContext';
-import GasPriceReducer from './bankVolumeReducer';
+import bankVolumeContext from './bankVolumeContext';
+import bankVolumeReducer from './bankVolumeReducer';
 import {
     GET_GAS_PRICE
 } from '../types'
 
 
-const BankVoumeState = props => {
+const BankVolumeState = props => {
   const initialState = {
     gasStation: [],
     loading: true
   };
-  const [state, dispatch] = useReducer(GasPriceReducer, initialState);
+  const [state, dispatch] = useReducer(bankVolumeReducer, initialState);
 
 
 
@@ -32,16 +32,16 @@ const BankVoumeState = props => {
 
 
   return (
-    <GasPriceContext.Provider value={{
+    <bankVolumeContext.Provider value={{
       gasStation: state.gasStation,
       loading: state.loading,
       getPrice
     }}>
       {props.children}
 
-    </GasPriceContext.Provider>
+    </bankVolumeContext.Provider>
   )
 
 }
 
-export default BankVoumeState;
+export default BankVolumeState;
