@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, Fragment, useReducer, useState } from 'react'
 
 import GridLayout from 'react-grid-layout';
-import WeatherSmall from '../weather/WeatherSmall';
-import WeatherDetail from '../weather/WeatherDetail';
+import SearchBox from '../searchBox/SearchBox';
+import AktienDetails from '../aktien/aktienDetails';
 import AuthContext from '../../context/auth/authContext';
 import NotesForm from '../notes/NotesForm';
 import { Responsive, WidthProvider } from 'react-grid-layout';
@@ -134,10 +134,10 @@ const Home = () => {
           onBreakpointChange={onBreakpointChange}
         >
           <div key="weatherSmall">
-            <WeatherSmall></WeatherSmall>
+            <SearchBox></SearchBox>
           </div>
           <div key="weatherLarge">
-            <WeatherDetail></WeatherDetail>
+            <AktienDetails></AktienDetails>
           </div>
           <div key="corona" className="wrapper-dash">
             <h2>Depot Information</h2>
@@ -166,10 +166,10 @@ const Home = () => {
           onBreakpointChange={onBreakpointChange}
         >
           <div key="weatherSmall">
-            <WeatherSmall></WeatherSmall>
+            <SearchBox></SearchBox>
           </div>
           <div key="weatherLarge">
-            <WeatherDetail></WeatherDetail>
+            <AktienDetails></AktienDetails>
           </div>
 
           <div key="corona" className="wrapper-dash">

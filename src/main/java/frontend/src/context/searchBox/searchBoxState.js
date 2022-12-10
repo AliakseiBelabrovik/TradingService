@@ -1,13 +1,13 @@
 import React, { useReducer } from 'react'
 import axios from 'axios';
-import WeatherContext from './weatherContext';
-import WeatherReducer from './weatherReducer';
+import WeatherContext from './searchBoxContext';
+import WeatherReducer from './searchBoxReducer';
 import {
     GET_WEATHER,
 } from '../types'
 
 
-const WeatherState = props => {
+const SearchBoxState = props => {
     const initialState = {
         weather: [],
         loading: true
@@ -42,4 +42,4 @@ const WeatherState = props => {
 
 }
 
-export default WeatherState;
+export default SearchBoxState;

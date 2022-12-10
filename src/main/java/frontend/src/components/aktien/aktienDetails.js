@@ -1,13 +1,13 @@
 import React, { useState, useContext, useEffect, Fragment } from 'react';
-import WeatherForecastContext from '../../context/weatherForecast/weatherForecastContext';
+import AktienDetailsContext from '../../context/./aktienDetails/aktienDetailsContext';
 import { Line } from 'react-chartjs-2';
 import { css } from "@emotion/react";
 import BeatLoader from "react-spinners/BeatLoader";
 
 
-const WeatherDetail = () => {
-  const weatherForecastContext = useContext(WeatherForecastContext);
-  const { hourlyForecast, getHourlyForecast, loading } = weatherForecastContext;
+const AktienDetails = () => {
+  const aktienDetailsContext = useContext(AktienDetailsContext);
+  const { hourlyForecast, getHourlyForecast, loading } = aktienDetailsContext;
   const { dt, temp } = hourlyForecast;
 
   useEffect(() => {
@@ -84,4 +84,4 @@ const WeatherDetail = () => {
   )
 };
 
-export default WeatherDetail;
+export default AktienDetails;

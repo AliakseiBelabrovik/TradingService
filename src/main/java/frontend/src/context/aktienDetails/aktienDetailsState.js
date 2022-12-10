@@ -1,13 +1,13 @@
 import React, { useContext, useEffect, Fragment, useReducer } from 'react'
 import axios from 'axios';
-import WeatherForecastContext from './weatherForecastContext';
-import WeatherForecasatReducer from './weatherForecasatReducer';
+import WeatherForecastContext from './aktienDetailsContext';
+import WeatherForecasatReducer from './aktienDetailsReducer';
 import {
   GET_HOURLY_WEATHER
 } from '../types'
 
 
-const WeatherForecastState = props => {
+const AktienDetailsState = props => {
   const initialState = {
     hourlyForecast: [],
     loading: true
@@ -44,4 +44,4 @@ const WeatherForecastState = props => {
 
 }
 
-export default WeatherForecastState;
+export default AktienDetailsState;

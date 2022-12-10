@@ -25,9 +25,9 @@ import Home from './components/pages/Home';
 //*import states below*//
 import AuthState from './context/auth/AuthState';
 import AlertState from './context/alert/AlertState';
-import WeatherState from './context/weather/weatherState';
+import SearchBoxState from './context/./searchBox/searchBoxState';
 import NoteState from './context/notes/NoteState';
-import WeatherForecastState from './context/weatherForecast/WeatherForecastState';
+import AktienDetailsState from './context/./aktienDetails/aktienDetailsState';
 import DepotState from './context/depot/DepotState';
 import BankVolumeState from './context/bankVolume/bankVolumeState';
 
@@ -47,8 +47,8 @@ const App = () => {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <NoteState>
-            <WeatherState>
-              <WeatherForecastState>
+            <SearchBoxState>
+              <AktienDetailsState>
                 <DepotState>
                   <BankVolumeState>
                     <Router>
@@ -72,8 +72,8 @@ const App = () => {
                     </Router>
                   </BankVolumeState>
                 </DepotState>
-              </WeatherForecastState>
-            </WeatherState>
+              </AktienDetailsState>
+            </SearchBoxState>
         </NoteState>
       </ThemeProvider>
     </AuthState>
