@@ -88,7 +88,7 @@ BurgerMenu.propTypes ={
 }
 
 BurgerMenu.defaultProps = {
-    title: 'seDashboard',
+    title: 'TradingService',
     icon: 'fas fa-id-card-alt'
 }
 
