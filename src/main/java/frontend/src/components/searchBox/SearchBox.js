@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect, Fragment } from 'react';
 import SearchBoxContext from '../../context/./searchBox/searchBoxContext';
-import TextField from "@mui/material/TextField";
 import BeatLoader from "react-spinners/BeatLoader";
 import { css } from "@emotion/react";
 
@@ -34,14 +33,6 @@ const SearchBox = () => {
                 (
                     <div>
                         <h1>React Search</h1>
-                        <div className="search">
-                            <TextField
-                                id="outlined-basic"
-                                variant="outlined"
-                                fullWidth
-                                label="Search"
-                            />
-                        </div>
                     </div>
                 )}
 
